@@ -26,3 +26,8 @@ urlpatterns = [
 if settings.DEBUG:
     from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+admin.site.site_header = 'Soy bodoque'
+admin.site.index_title = 'Administración de fotos'
+admin.site.site_title = 'Soy bodoque'
